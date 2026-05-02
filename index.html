@@ -1,8 +1,379 @@
-<h1>Facebook資料刪除指示的網址</h1>
-<h3>KeepJumping 登入有使用 Facebook 登入應用。根據 Facebook 的政策，我們必須提供 “Facebook資料刪除指示的網址” 這個說明網頁。</h3>
-<h3>如果您想刪除與 KeepJumping 有關的 Facebook 登入應用數據資料，您可以按照以下步驟進行：</h3>
-<h3>1.進入您的 Facebook 帳號的 “設定和隱私” 選單。點擊 “設定”</h3>
-<h3>2.向下滾動並點擊 “應用程式和網站”</h3>
-<h3>3.找到並點擊 “KeepJumping”</h3>
-<h3>4.點擊 “移除” 按鈕</h3>
-<h3>5.即可成功地刪除了您的 KeepJumping應用程式活動。</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion - EphemeralSteps</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --paper: #fffaf2;
+      --ink: #1e2522;
+      --muted: #5f6964;
+      --line: #d8cfc0;
+      --accent: #1e6f63;
+      --accent-soft: #dff0ea;
+      --warn: #fff2df;
+      --warn-border: #e1b97a;
+      --shadow: 0 18px 40px rgba(28, 41, 36, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(30, 111, 99, 0.10), transparent 35%),
+        radial-gradient(circle at top right, rgba(240, 220, 194, 0.75), transparent 30%),
+        linear-gradient(180deg, #f7f2e9 0%, #f0e8dc 100%);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: 32px auto 56px;
+    }
+
+    .hero,
+    .section,
+    .footer {
+      background: var(--paper);
+      border: 1px solid rgba(216, 207, 192, 0.9);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+    }
+
+    .hero {
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(30, 111, 99, 0.15), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.2;
+      margin: 0 0 12px;
+      color: #17211d;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      margin-top: 14px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p,
+    li {
+      color: var(--ink);
+      margin: 0 0 12px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .meta,
+    .summary,
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .meta {
+      margin-top: 22px;
+    }
+
+    .summary,
+    .grid {
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.68);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #132a25;
+    }
+
+    .section,
+    .footer {
+      margin-top: 20px;
+      padding: 28px 30px;
+    }
+
+    ul,
+    ol {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      background: #f2faf7;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-top: 14px;
+    }
+
+    .warning {
+      border: 1px solid var(--warn-border);
+      background: var(--warn);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-top: 18px;
+    }
+
+    .small {
+      font-size: 14px;
+    }
+
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 640px) {
+      .hero,
+      .section,
+      .footer {
+        padding: 22px 18px;
+        border-radius: 18px;
+      }
+
+      .wrap {
+        width: min(100% - 18px, 980px);
+        margin: 18px auto 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Account Deletion</span>
+      <h1>Delete Your EphemeralSteps Account</h1>
+      <p class="muted">
+        This page explains how users of <strong>EphemeralSteps</strong> can request deletion
+        of their in-app account and associated account data managed by <strong>SunSunny</strong>.
+      </p>
+      <div class="meta">
+        <div class="card">
+          <strong>Developer</strong>
+          <span>SunSunny</span>
+        </div>
+        <div class="card">
+          <strong>App</strong>
+          <span>EphemeralSteps</span>
+        </div>
+        <div class="card">
+          <strong>Package Name</strong>
+          <span>com.sunsunny.ephemeralsteps</span>
+        </div>
+        <div class="card">
+          <strong>Last Updated</strong>
+          <span>May 1, 2026</span>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="card">
+          <strong>How accounts are created</strong>
+          <span>Accounts may be created automatically through a device-based sign-in flow.</span>
+        </div>
+        <div class="card">
+          <strong>Deletion effect</strong>
+          <span>Account deletion is permanent and may remove player profile, progress, rankings, and entitlements stored for gameplay.</span>
+        </div>
+        <div class="card">
+          <strong>Typical processing time</strong>
+          <span>We aim to review and process valid requests within 15 business days.</span>
+        </div>
+        <div class="card">
+          <strong>Limited retention</strong>
+          <span>Some records may be kept longer where required for payments, fraud prevention, security, or legal compliance.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>1. How to Request Account Deletion</h2>
+      <p>
+        To request deletion of your EphemeralSteps account, send an email to:
+        <a href="mailto:[jjmissing@gmail.com]">[jjmissing@gmail.com]</a>
+      </p>
+      <p>
+        Use the subject line:
+        <code>EphemeralSteps Account Deletion Request</code>
+      </p>
+      <p>
+        In your request, please include enough information for us to identify your account.
+        Because EphemeralSteps may create accounts automatically through a device-based sign-in flow,
+        you may not have a traditional username or password. To help us locate the correct account,
+        please provide as many of the following details as possible:
+      </p>
+      <ul>
+        <li>your in-game nickname, if available;</li>
+        <li>your selected region or country, if available;</li>
+        <li>your approximate last login date;</li>
+        <li>your device model and operating system version;</li>
+        <li>your Google Play order ID for any recent purchase, if relevant;</li>
+        <li>any other information that helps identify your account.</li>
+      </ul>
+      <div class="note">
+        We may ask for additional information reasonably necessary to verify that the person
+        making the request is the account holder or an authorized person.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2. What Will Be Deleted</h2>
+      <p>
+        Once your request is validated and processed, we will delete or permanently anonymize
+        account-linked data that is no longer required for legal, security, or operational purposes.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <strong>Account data</strong>
+          <span>Account identifiers, player profile linkage, nickname, and region information associated with your account.</span>
+        </div>
+        <div class="card">
+          <strong>Gameplay data</strong>
+          <span>Saved progress, scores, challenge status, role status, inventory, and similar gameplay records linked to your account.</span>
+        </div>
+        <div class="card">
+          <strong>Ranking data</strong>
+          <span>Leaderboard and ranking entries tied to your player account, subject to backup and system propagation timing.</span>
+        </div>
+        <div class="card">
+          <strong>Service data</strong>
+          <span>Session and account-related records that are not required to be retained for legal or security reasons.</span>
+        </div>
+      </div>
+      <p>
+        Account deletion is generally permanent. After deletion, you may lose access to account-linked
+        content, progress, purchases, rewards, and any other game data associated with that account.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>3. What May Be Retained</h2>
+      <p>
+        Certain limited information may be retained after account deletion where retention is necessary
+        or permitted by law.
+      </p>
+      <ul>
+        <li>purchase and payment verification records needed for tax, accounting, fraud prevention, dispute handling, or legal compliance;</li>
+        <li>security logs and audit records needed to investigate abuse, cheating, fraud, or service misuse;</li>
+        <li>records required to enforce legal rights, regulatory obligations, or platform requirements;</li>
+        <li>temporary backup copies that are automatically deleted or overwritten in the ordinary backup cycle.</li>
+      </ul>
+      <p>
+        Retained data will not be used to restore ordinary account access except where required for
+        legal or security reasons.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>4. Third-Party Services</h2>
+      <p>
+        EphemeralSteps may use third-party services, including AppLovin MAX for rewarded advertising
+        and Google Play Billing for in-app purchase processing. Deleting your in-app account with
+        SunSunny does not automatically delete data processed independently by those third parties under
+        their own policies.
+      </p>
+      <ul>
+        <li>AppLovin Privacy Policy: <a href="https://legal.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">https://legal.applovin.com/privacy/</a></li>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>5. Processing Timeline</h2>
+      <ol>
+        <li>We receive your deletion request.</li>
+        <li>We verify the request and may ask for additional information if needed.</li>
+        <li>We process the deletion or anonymization of eligible account-linked data.</li>
+        <li>We send a confirmation reply when the request has been completed or if additional action is required.</li>
+      </ol>
+      <p>
+        We aim to complete valid requests within <strong>15 business days</strong>. In complex cases,
+        or where permitted by local law, we may require additional time. If that happens, we will
+        notify you where reasonably possible.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>6. Reconsideration and Partial Limitations</h2>
+      <p>
+        If we cannot fully delete all requested data, we will explain the reason, such as legal
+        retention obligations, security obligations, or the inability to verify ownership of the account.
+      </p>
+      <p>
+        If you withdraw your request before deletion is completed, please reply from the same email
+        address and clearly state that you want to cancel the deletion request.
+      </p>
+    </section>
+
+    <section class="footer">
+      <h2>7. Contact</h2>
+      <p>
+        Developer: <strong>SunSunny</strong>
+      </p>
+      <p>
+        Account deletion contact:
+        <a href="mailto:[jjmissing@gmail.com]">[jjmissing@gmail.com]</a>
+      </p>
+      <p class="small muted">
+        This page is intended to serve as the public web resource for account deletion requests
+        associated with EphemeralSteps. If the app adds new account systems, third-party identity
+        providers, or region-specific legal workflows, this page should be updated before release.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
